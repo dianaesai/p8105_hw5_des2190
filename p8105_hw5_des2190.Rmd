@@ -111,6 +111,7 @@ output_df %>%
 ggplot(aes(x = mu, y = power), alpha = 0.5) + 
 	geom_line()
 ```
+
 The general association is positive. In general the larger the effect size, the stronger the power.
 
 ```{r}
@@ -148,4 +149,4 @@ output_df3 %>%
 
 ### Is the sample average of μ̂ across tests for which the null is rejected approximately equal to the true value of μ? Why or why not?
 
-Yes, they are equal and we know this because the slope appears to be equal to 1 on the graph.
+Yes, they are equal and we know this because the slope appears to be equal to 1 on the graph. This also makes sense because the estimates of this data set was generated using random datapoints close to the true mu, which are the mus we initially set. Therefore, over a large data, the average of the estimates should be very close to the "true" mu. In fact, the larger the data set, the closer we would see the values. Since this data set is very large, the fact that the estimate and true value are almost equal to eachother should not surprise us.
